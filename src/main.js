@@ -77,7 +77,7 @@ let step = () => {
             html.scrollTo(0,99999);
             n++;
             step();
-        }, 0);
+        }, 50);
     }
 }
 
