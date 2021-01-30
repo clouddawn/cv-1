@@ -41,6 +41,21 @@ let string = `
     background: radial-gradient(circle, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%);
     transform: translate(100%,-50%);
 }
+/*最后，让这个八卦图动起来*/
+#div1 {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 `;
 let string2 = '';
 let n = 0;
@@ -62,7 +77,7 @@ let step = () => {
             html.scrollTo(0,99999);
             n++;
             step();
-        }, 50);
+        }, 0);
     }
 }
 

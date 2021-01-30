@@ -21,7 +21,8 @@
             position: fixed;
             top: 10%;
             left: 50%;
-            transform: translateX(-50%);
+            /* transform: translateX(-50%); */
+            margin-left: -100px;
         }
         #html {
             word-break: break-all;
@@ -37,13 +38,17 @@
             #div1 {
                 position: relative;
                 top: 50%;
-                transform: translate(-50%,-50%);
+                /* transform: translate(-50%,-50%); */
+                margin-left: -100px;
+                margin-top: -100px;
             }
         }
     </style>
     <div id="html"></div>
     <div id="div1Wrapper">
-        <div id="div1"></div>
+        <div id="div1">
+            <div id="div1Rotate"></div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
