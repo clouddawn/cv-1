@@ -43,10 +43,7 @@ let string = `
 }
 /*最后，让这个八卦图动起来*/
 #div1 {
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation: spin 3s infinite linear;
 }
 @keyframes spin {
     form {
@@ -77,7 +74,7 @@ let step = () => {
             html.scrollTo(0,99999);
             n++;
             step();
-        }, 50);
+        }, 25);
     }
 }
 
